@@ -1,6 +1,0 @@
-[
-  {
-    "name": "Explain-State-1",
-    "question": "Below is the state of a wordle game:\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n[[['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]]\n\nQ: What do we know about the game? Has the player won yet? What is the current turn? what words have been tried?\n\nA:\n",
-    "answer": null,
-    "error": 
