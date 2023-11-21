@@ -1,5 +1,21 @@
-### Explain-State-1
-**Question:**
+# Basic Wordle Questions
+#### info
+Written 11.18.23
+These are to get a baseline on LLM capabilities.
+
+#### meta
+- sheet name: Basic
+
+## Explain-State-1
+#### meta
+ - name: Explain-State-1
+ - description: given a wordle game state, explain what we know about the game
+ - answer type: free-response, multi-question
+ - answer suggested length: 300
+ - question assets: plain-text-board, python-nyt-board
+ - prompt style: QA
+ 
+#### question
 Below is the state of a wordle game:
 
 A B O U T
@@ -15,22 +31,15 @@ Q: What do we know about the game? Has the player won yet? What is the current t
 
 A:
 
-**Answer:**
-Based on the given information, we can deduce the following about the game:
-
-1. The word to be guessed has 5 letters.
-2. The word "ABOUT" has one correct letter ("O") in the correct position.
-3. The word "SALES" has one correct letter ("S") in the correct position.
-4. The word "FLAME" has no correct letters in the correct position.
-5. No attempts have been made to guess the words in the last three rows.
-
-Based on this information, we cannot determine if the player has won yet. However, we can infer that it is not the player's first turn since attempts have been made to guess some letters. The words that have been tried so far are:
-
-- "absent": The letters "A", "B", "O", "U", and "T" have been tried and only the letter "O" in the word "ABOUT" is correct.
-- "present": The letters "S
-
-### Better-Guess-1a
-**Question:**
+## Better-Guess-1a
+#### meta
+ - name: Better-Guess-1a
+ - description: given a wordle game state, make the best guess from choices supplied.
+ - answer type: multiple-choice
+ - answer suggested length: 5
+ - question assets: plain-text-board, python-nyt-board
+ - prompt style: QA, implicit-multiple-choice 
+#### question
 Below is the state of a wordle game:
 
 A B O U T
@@ -46,11 +55,15 @@ Q: What would be a better next guess: "BOOKS", "FLAKE", or "DINOSAUR"?
 
 A: 
 
-**Answer:**
-Based on the given state of the wordle game, a better next guess would be "FLAKE". This is because in the second row, the letter 'L' is present in the correct position, and the letter 'E' is also present but in the wrong position. Guessing "FLAKE" would allow you to confirm the correct placement of the letter 'L' and potentially discover the correct placement of the letter 'E'.
-
-### Better-Guess-1b
-**Question:**
+## Better-Guess-1b
+#### meta
+ - name: Better-Guess-1b
+ - description: given a wordle game state, make the best guess from choices supplied.
+ - answer type: multiple-choice
+ - answer suggested length: 5
+ - question assets: plain-text-board, python-nyt-board
+ - prompt style: multiple-choice 
+#### question
 Below is the state of a wordle game:
 
 A B O U T
@@ -68,11 +81,15 @@ B) FLAKE
 C) DINOSAUR
 
 
-**Answer:**
-A) BOOKS
-
-### Better-Guess-2
-**Question:**
+## Better-Guess-2
+#### meta
+ - name: Better-Guess-2
+ - description: given a wordle game state, determine best guess and explain why.
+ - answer type: free response, multi-question
+ - answer suggested length: 300
+ - question assets: plain-text-board, python-nyt-board
+ - prompt style: QA
+#### question
 Below is the state of a wordle game:
 
 A B O U T
@@ -87,13 +104,3 @@ F L A M E
 Q: What would be a better next guess: "BOOKS", "FLAKE", or "DINOSAUR". Why? What would be another good guess?
 
 A: 
-
-**Answer:**
-A better next guess would be "FLAKE". 
-
-Based on the given information, we know that the correct letter "A" is in the second position. "FLAKE" has an "A" in the correct position, so it is a potential word that matches the known information.
-
-"DINOSAUR" would not be a good guess because none of the letters in "DINOSAUR" match the known information.
-
-Another good guess could be "AMPLE". It matches the known information in the second row (A _ _ _ _) and has different letters in the remaining positions.
-

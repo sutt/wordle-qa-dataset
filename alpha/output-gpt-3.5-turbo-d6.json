@@ -1,0 +1,83 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Basic Wordle Questions",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- sheet name: Basic\n",
+        "data": {
+          "sheet_name": "Basic"
+        }
+      }
+    ]
+  },
+  "questions": [
+    {
+      "name": "Explain-State-1",
+      "meta_data": {
+        "sheet_name": "Basic",
+        "name": "Explain-State-1",
+        "description": "given a wordle game state, explain what we know about the game",
+        "answer_type": "free-response, multi-question",
+        "answer_suggested_length": "300",
+        "question_assets": "plain-text-board, python-nyt-board",
+        "prompt_style": "QA"
+      },
+      "question": "Below is the state of a wordle game:\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n[[['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]]\n\nQ: What do we know about the game? Has the player won yet? What is the current turn? what words have been tried?\n\nA:\n",
+      "answer": "Based on the provided state of the wordle game, we can deduce the following information:\n\n1. The wordle game has a 5x5 grid, with the words \"ABOUT\", \"SALES\", and \"FLAME\" already revealed.\n2. The player has not won yet because there are still empty spaces in the grid.\n3. The current turn is not specified in the given information.\n4. The words that have been tried so far are \"absent\" for the first row, \"present\" for the second row, and \"empty\" for the remaining rows.\n\nPlease note that the current turn and any additional information about the game are not provided, so we cannot determine the exact state of the game beyond the given information.",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 3.7865467071533203
+    },
+    {
+      "name": "Better-Guess-1a",
+      "meta_data": {
+        "sheet_name": "Basic",
+        "name": "Better-Guess-1a",
+        "description": "given a wordle game state, make the best guess from choices supplied.",
+        "answer_type": "multiple-choice",
+        "answer_suggested_length": "5",
+        "question_assets": "plain-text-board, python-nyt-board"
+      },
+      "question": "Below is the state of a wordle game:\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n[[['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]]\n\nQ: What would be a better next guess: \"BOOKS\", \"FLAKE\", or \"DINOSAUR\"?\n\nA: \n",
+      "answer": "A better next guess would be \"FLAKE\" because it shares three letters with the word \"FLAME\" that are in the correct positions.",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 1.6373677253723145
+    },
+    {
+      "name": "Better-Guess-1b",
+      "meta_data": {
+        "sheet_name": "Basic",
+        "name": "Better-Guess-1b",
+        "description": "given a wordle game state, make the best guess from choices supplied.",
+        "answer_type": "multiple-choice",
+        "answer_suggested_length": "5",
+        "question_assets": "plain-text-board, python-nyt-board"
+      },
+      "question": "Below is the state of a wordle game:\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n[[['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]]\n\nQ: What would be a better next guess: \nA) BOOKS\nB) FLAKE\nC) DINOSAUR\n\n",
+      "answer": "A better next guess would be B) FLAKE.",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 1.1175103187561035
+    },
+    {
+      "name": "Better-Guess-2",
+      "meta_data": {
+        "sheet_name": "Basic",
+        "name": "Better-Guess-2",
+        "description": "given a wordle game state, determine best guess and explain why.",
+        "answer_type": "free response, multi-question",
+        "answer_suggested_length": "300",
+        "question_assets": "plain-text-board, python-nyt-board"
+      },
+      "question": "Below is the state of a wordle game:\n\nA B O U T\nS A L E S\nF L A M E\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\u25a1 \u25a1 \u25a1 \u25a1 \u25a1\n\n[[['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]]\n\nQ: What would be a better next guess: \"BOOKS\", \"FLAKE\", or \"DINOSAUR\". Why? What would be another good guess?\n\nA: \n",
+      "answer": "A better next guess would be \"FLAKE\". \n\nThis is because we know from the state of the board that the first letter of the word is \"F\" and that the second letter is \"L\". The word \"FLAKE\" fits these criteria, so it is a good possibility. \n\nAnother good guess could be \"BLAME\". This is because we know the third letter is \"A\" and the fourth letter is \"M\". \"BLAME\" fits these criteria and is a valid word.",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 3.961517333984375
+    }
+  ]
+}
