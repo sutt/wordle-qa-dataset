@@ -1,0 +1,35 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Intermediate Wordle Questions",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- sheet name: Intermediate\n",
+        "data": {
+          "sheet_name": "Intermediate"
+        }
+      }
+    ]
+  },
+  "questions": [
+    {
+      "name": "Explain-State-1",
+      "meta_data": {
+        "sheet_name": "Intermediate",
+        "name": "Explain-State-1",
+        "description": "given a wordle game state, explain what we know about the game",
+        "answer_type": "free-response, multi-question",
+        "answer_suggested_length": "300",
+        "question_assets": "plain-text-board, python-nyt-board",
+        "prompt_style": "QA"
+      },
+      "question": "Below is the state of a wordle game:\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n[[['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]]\n\nQ: What do we know about the game? Has the player won yet? What is the current turn? what words have been tried?\n\nA:\n",
+      "answer": "From the given state of the wordle game, we can infer the following:\n\n1. The word to be guessed is a five-letter word.\n2. The word \"ABOUT\" has one correct letter in the correct position, which is 'O'.\n3. The word \"SALES\" has one correct letter in the correct position, which is 'S'.\n4. The word \"FLAME\" has no correct letters in the correct position.\n5. The board shows three rows of empty spaces for the guesses.\n\nBased on this information, we cannot determine if the player has won yet, as we do not know the word to be guessed. We also cannot determine the current turn or the words that have been tried previously, as the information provided does not include the history of guesses.",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 2.6285173892974854
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Basic Wordle Questions",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- sheet name: Basic\n",
+        "data": {
+          "sheet_name": "Basic"
+        }
+      }
+    ]
+  },
+  "questions": [
+    {
+      "name": "Explain-State-1",
+      "meta_data": {
+        "sheet_name": "Basic",
+        "name": "Explain-State-1",
+        "description": "given a wordle game state, explain what we know about the game",
+        "answer_type": "free-response, multi-question",
+        "answer_suggested_length": "300",
+        "question_assets": "plain-text-board, python-nyt-board",
+        "prompt_style": "QA"
+      },
+      "question": "Below is the state of a wordle game:\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n[[['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]]\n\nQ: What do we know about the game? Has the player won yet? What is the current turn? what words have been tried?\n\nA:\n",
+      "answer": "Based on the given state of the wordle game, we can determine the following:\n\n1. The word to be guessed has 5 letters.\n2. The player has made 3 attempts so far.\n3. The word \"ABOUT\" has been partially guessed, with the correct letter 'O' in the correct position.\n4. The word \"SALES\" has been partially guessed, with the correct letter 'S' in the correct position.\n5. The word \"FLAME\" has not been guessed correctly yet.\n\nSince the player has not guessed the word correctly and there are still empty spaces in the game board, the player has not won yet.\n\nThe current turn is not specified in the given information.\n\nThe words that have been tried so far are \"ABSENT\", \"PRESENT\", \"CORRECT\", \"ABSENT\", \"ABSENT\", \"PRESENT\", \"ABSENT\", \"ABSENT\", \"ABSENT\", \"ABSENT\", \"ABSENT\", \"ABSENT\".",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 3.4520225524902344
+    },
+    {
+      "name": "Better-Guess-1a",
+      "meta_data": {
+        "sheet_name": "Basic",
+        "name": "Better-Guess-1a",
+        "description": "given a wordle game state, make the best guess from choices supplied.",
+        "answer_type": "multiple-choice",
+        "answer_suggested_length": "5",
+        "question_assets": "plain-text-board, python-nyt-board"
+      },
+      "question": "Below is the state of a wordle game:\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n[[['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]]\n\nQ: What would be a better next guess: \"BOOKS\", \"FLAKE\", or \"DINOSAUR\"?\n\nA: \n",
+      "answer": "Based on the current state of the wordle game, a better next guess would be \"FLAKE\".",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 0.8348240852355957
+    },
+    {
+      "name": "Better-Guess-1b",
+      "meta_data": {
+        "sheet_name": "Basic",
+        "name": "Better-Guess-1b",
+        "description": "given a wordle game state, make the best guess from choices supplied.",
+        "answer_type": "multiple-choice",
+        "answer_suggested_length": "5",
+        "question_assets": "plain-text-board, python-nyt-board"
+      },
+      "question": "Below is the state of a wordle game:\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n[[['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]]\n\nQ: What would be a better next guess: \nA) BOOKS\nB) FLAKE\nC) DINOSAUR\n\n",
+      "answer": "To determine a better next guess, we need to analyze the given information and try to make an educated guess based on the available clues.\n\nLooking at the state of the wordle game, we can see that the correct letters are 'O' in the first row, 'S' in the second row, and no correct letters in the third row. \n\nLet's evaluate the options:\n\nA) BOOKS: This option has the letter 'O' in the correct position in the first row, which matches the available clue. However, it doesn't match the correct letters 'S' in the second row. Therefore, this option is not a better guess.\n\nB) FLAKE: This option doesn't match any of the correct letters or their positions. Therefore, this option is not a better guess.\n\nC) DINOSAUR: This option doesn't match any of the correct letters or their positions. Therefore, this option is not a better guess.\n\nBased on the given information, none of",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 3.3858296871185303
+    },
+    {
+      "name": "Better-Guess-2",
+      "meta_data": {
+        "sheet_name": "Basic",
+        "name": "Better-Guess-2",
+        "description": "given a wordle game state, determine best guess and explain why.",
+        "answer_type": "free response, multi-question",
+        "answer_suggested_length": "300",
+        "question_assets": "plain-text-board, python-nyt-board"
+      },
+      "question": "Below is the state of a wordle game:\n\nA B O U T\nS A L E S\nF L A M E\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1 \u00e2\u2013\u00a1\n\n[[['absent', 'a'], ['present', 'b'], ['correct', 'o'], ['absent', 'u'], ['absent', 't']], [['present', 's'], ['absent', 'a'], ['absent', 'l'], ['absent', 'e'], ['correct', 's']], [['absent', 'f'], ['absent', 'l'], ['absent', 'a'], ['absent', 'm'], ['absent', 'e']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']], [['empty', ''], ['empty', ''], ['empty', ''], ['empty', ''], ['empty', '']]]\n\nQ: What would be a better next guess: \"BOOKS\", \"FLAKE\", or \"DINOSAUR\". Why? What would be another good guess?\n\nA: \n",
+      "answer": "A better next guess would be \"FLAKE\". \n\nReasoning: Based on the information provided, we know that the correct letters in the word are 'A', 'O', 'S', and 'L'. \"FLAKE\" contains these letters, while \"BOOKS\" and \"DINOSAUR\" do not. \n\nAnother good guess could be \"ALOES\" as it also contains the correct letters 'A', 'O', 'S', and 'L'.",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 1.822411060333252
+    }
+  ]
+}
