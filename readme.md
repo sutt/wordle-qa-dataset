@@ -10,3 +10,16 @@ Benefits:
  - (hopefully) allows more a fluid, evolving schema, e.g. adding a new field to a question type
  - 
 
+### Using utils
+
+**newest.sh** will find the most recently created `.md` file call `code` on that file tus bringing it into an editor pane. This will be the results from the most recent model eval.
+
+This script defines a function `newest` that can be called from anywhere. Simply source it in a terminal then you can call it. (On windows, I use the alias `mybash` to get a bash terminal.)
+
+```bash
+cd utils/
+source newest.sh
+# call main.py to run the val pipeline
+cd ../beta
+newest
+```
