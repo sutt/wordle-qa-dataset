@@ -1,0 +1,29 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Shorties",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- sheet name: Shorties\n",
+        "data": {
+          "sheet_name": "Shorties"
+        }
+      }
+    ],
+    "run_id": "3724"
+  },
+  "questions": [
+    {
+      "name": "Rules-QA-1",
+      "meta_data": {
+        "sheet_name": "Shorties",
+        "name": "Rules-QA-1",
+        "description": "answer question about the knowing the rules.",
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n\nQ: What is the maximum number of guesses you can make in a game of Wordle?\nA) 5\nB) 6\nC) 7\nD) No limit\n",
+      "answer": null,
+      "error": 

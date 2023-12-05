@@ -1,0 +1,49 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Shorties",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- sheet name: Shorties\n",
+        "data": {
+          "sheet_name": "Shorties"
+        }
+      }
+    ],
+    "run_id": "ba50"
+  },
+  "questions": [
+    {
+      "name": "Rules-QA-1",
+      "meta_data": {
+        "sheet_name": "Shorties",
+        "name": "Rules-QA-1",
+        "description": "answer question about the knowing the rules.",
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n\nQ: What is the maximum number of guesses you can make in a game of Wordle?\nA) 5\nB) 6\nC) 7\nD) No limit\n",
+      "answer": "A: The maximum number of guesses you can make in a game of Wordle is 6.",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 1.1597237586975098
+    },
+    {
+      "name": "Rules-QA-2",
+      "meta_data": {
+        "sheet_name": "Shorties",
+        "name": "Rules-QA-2",
+        "description": "answer question about the knowing the rules.",
+        "answer_type": "mutliple-choice",
+        "answer_suggested_length": "10"
+      },
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n\nQ: How many letter are in the word you are trying to guess?\nA) 4\nB) 5\nC) 6\nD) Any amount\n\n",
+      "answer": "D) Any amount",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 0.6073293685913086
+    }
+  ]
+}
