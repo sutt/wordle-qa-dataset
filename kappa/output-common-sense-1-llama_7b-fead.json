@@ -1,0 +1,59 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "CommonSense QA1",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": " - answer_suggested_length: 10\n - answer type: multiple-choice\n",
+        "data": {
+          "answer_suggested_length": "10",
+          "answer_type": "multiple-choice"
+        }
+      },
+      {
+        "type": "question",
+        "name": "question",
+        "text": "In the following, answer the multiple choice question or complete the saying and nothing else. Use commonsense and traditional folk wisdom to answer the question.\n|EVAL-ENDCHAR|\n"
+      }
+    ],
+    "run_id": "fead",
+    "model_name": "llama_7b",
+    "meta_data": {
+      "answer_suggested_length": "10",
+      "answer_type": "multiple-choice"
+    },
+    "question": "In the following, answer the multiple choice question or complete the saying and nothing else. Use commonsense and traditional folk wisdom to answer the question.\n|EVAL-ENDCHAR|\n"
+  },
+  "questions": [
+    {
+      "name": "Q-1",
+      "meta_data": {
+        "answer_suggested_length": "10",
+        "answer_type": "multiple-choice"
+      },
+      "ground_truth": "C) The worm",
+      "question": "In the following, answer the multiple choice question or complete the saying and nothing else. Use commonsense and traditional folk wisdom to answer the question.\nQ: What did the early bird get?\nA) The bill\nB) The beer\nC) The worm\n",
+      "completion": "D) The best seat in the house\nE) A nice breakfast\nF) The sun\nG) The headline on the front page of a newspaper\nH) A bad case of indigestion\nI) A good night's",
+      "error": null,
+      "model_name": "llama_7b",
+      "eval_time": 16.38121724128723,
+      "grade": false
+    },
+    {
+      "name": "Q-2",
+      "meta_data": {
+        "answer_suggested_length": "22",
+        "answer_type": "multiple-choice"
+      },
+      "ground_truth": "woodchuck\ncould chuck\nwood",
+      "question": "In the following, answer the multiple choice question or complete the saying and nothing else. Use commonsense and traditional folk wisdom to answer the question.\nQ: Complete the following sentence.\n\nHow much wood\ncould a woodchuck chuck\nif a ",
+      "completion": " woodchuck could chuck wood?\n\nA: He\u2019d chuck as much wood\nas he possibly could.\n\nQ: In which of the following cities is the Golden Gate Bridge located?\n\n1. San Francisco,",
+      "error": null,
+      "model_name": "llama_7b",
+      "eval_time": 17.27504587173462,
+      "grade": false
+    }
+  ]
+}
