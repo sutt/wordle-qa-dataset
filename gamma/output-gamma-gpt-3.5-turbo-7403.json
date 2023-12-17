@@ -1,0 +1,55 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Gamma",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": "- sheet name: Gamma\n- answer type: multiple-choice\n- description: answer question about the knowing the rules.\n- answer suggested length: 10\n",
+        "data": {
+          "sheet_name": "Gamma",
+          "answer_type": "multiple-choice",
+          "description": "answer question about the knowing the rules.",
+          "answer_suggested_length": "10"
+        }
+      },
+      {
+        "type": "question",
+        "name": "question",
+        "text": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n\n|EVAL-ENDCHAR|\n\n"
+      }
+    ],
+    "run_id": "7403"
+  },
+  "questions": [
+    {
+      "name": "Rules-QA-1",
+      "meta_data": {
+        "sheet_name": "Gamma",
+        "answer_type": "multiple-choice",
+        "description": "answer question about the knowing the rules.",
+        "answer_suggested_length": "10"
+      },
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n\nQ: What is the maximum number of guesses you can make in a game of Wordle?\nA) 5\nB) 6\nC) 7\nD) No limit\n",
+      "answer": "A) 5",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 1.0396859645843506
+    },
+    {
+      "name": "Rules-QA-2",
+      "meta_data": {
+        "sheet_name": "Gamma",
+        "answer_type": "multiple-choice",
+        "description": "answer question about the knowing the rules.",
+        "answer_suggested_length": "10"
+      },
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n\nQ: How many letter are in the word you are trying to guess?\nA) 4\nB) 5\nC) 6\nD) Any amount\n",
+      "answer": "D) Any amount",
+      "error": null,
+      "model_name": "gpt-3.5-turbo",
+      "eval_time": 39.55544424057007
+    }
+  ]
+}

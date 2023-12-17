@@ -66,5 +66,6 @@ B) False<EVAL-ENDCHAR>
 Q: When a letter is indicated as correct, that means that any letter could go in that spot?
 A) True
 B) False
+
 #### answer
 B) False<EVAL-ENDCHAR>
