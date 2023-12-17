@@ -1,0 +1,73 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "CommonSense QA2",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": " - answer_suggested_length: 10\n - answer type: multiple-choice\n",
+        "data": {
+          "answer_suggested_length": "10",
+          "answer_type": "multiple-choice"
+        }
+      },
+      {
+        "type": "question",
+        "name": "question",
+        "text": "In the following, answer the multiple choice question or complete the saying and nothing else. Use commonsense and traditional folk wisdom to answer the question.\n|EVAL-ENDCHAR|\n"
+      }
+    ],
+    "run_id": "b5ff",
+    "model_name": "llama_13b_chat",
+    "meta_data": {
+      "answer_suggested_length": "10",
+      "answer_type": "multiple-choice"
+    },
+    "question": "In the following, answer the multiple choice question or complete the saying and nothing else. Use commonsense and traditional folk wisdom to answer the question.\n|EVAL-ENDCHAR|\n"
+  },
+  "questions": [
+    {
+      "name": "Q-1",
+      "meta_data": {
+        "answer_suggested_length": "10",
+        "answer_type": "multiple-choice"
+      },
+      "ground_truth": "C) The worm",
+      "question": "In the following, answer the multiple choice question or complete the saying and nothing else. Use commonsense and traditional folk wisdom to answer the question.\nQ: What did the early bird get?\nA) The bill\nB) The beer\nC) The worm\n",
+      "completion": "D) The honey\nE) The breakfast\nPlease let me know if I need to give more details or clarify my question. Thank you!",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 80.44504380226135,
+      "grade": false
+    },
+    {
+      "name": "Q-2",
+      "meta_data": {
+        "answer_suggested_length": "10",
+        "answer_type": "multiple-choice"
+      },
+      "ground_truth": "B) The farmer's wife",
+      "question": "In the following, answer the multiple choice question or complete the saying and nothing else. Use commonsense and traditional folk wisdom to answer the question.\nQ: Who cut off the tails of the three blind mice?\nA) The candlestick maker\nB) The farmer's wife\n",
+      "completion": "C) The three blind mice themselves\nD) A group of rats who were jealous of their newfound fame",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 25.28836488723755,
+      "grade": false
+    },
+    {
+      "name": "Q-3",
+      "meta_data": {
+        "answer_suggested_length": "10",
+        "answer_type": "multiple-choice"
+      },
+      "ground_truth": "A) Mercury",
+      "question": "In the following, answer the multiple choice question or complete the saying and nothing else. Use commonsense and traditional folk wisdom to answer the question.\nQ: What is the closet planet to the sun?\nA) Mercury\nB) Venus\nC) Earth\n",
+      "completion": "D) Mars\nE) Pluto\nF) The Moon",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 17.746337413787842,
+      "grade": false
+    }
+  ]
+}

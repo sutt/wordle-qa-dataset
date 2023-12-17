@@ -1,0 +1,94 @@
+{
+  "sheet": {
+    "type": "sheet",
+    "name": "Wordle-Multiple-Choice-1",
+    "sub_sections": [
+      {
+        "type": "meta",
+        "name": "meta",
+        "text": " - answer_suggested_length: 10\n",
+        "data": {
+          "answer_suggested_length": "10"
+        }
+      },
+      {
+        "type": "question",
+        "name": "question",
+        "text": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n"
+      }
+    ],
+    "run_id": "6809",
+    "model_name": "llama_13b_chat",
+    "meta_data": {
+      "answer_suggested_length": "10"
+    },
+    "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\n"
+  },
+  "questions": [
+    {
+      "name": "Rules-QA-1",
+      "meta_data": {
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) 6",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: What is the maximum number of guesses you can make in a game of Wordle?\nA) 5\nB) 6\nC) 7\n",
+      "completion": "  C) 7",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 61.61029052734375,
+      "grade": false
+    },
+    {
+      "name": "Rules-QA-2",
+      "meta_data": {
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) 5",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: How many letter are in the word you are trying to guess?\nA) 4\nB) 5\nC) 6\n",
+      "completion": "  C) Six",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 35.41657757759094,
+      "grade": false
+    },
+    {
+      "name": "Rules-QA-3",
+      "meta_data": {
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "A) Present",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: When a letter is in the word you are trying to guess, but not in the correct position, what is it called?\nA) Present\nB) Absent\nC) Correct\n",
+      "completion": "  Sure thing! Here's my answer:\n\nC) Incorrect",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 41.53158736228943,
+      "grade": false
+    },
+    {
+      "name": "Rules-QA-4",
+      "meta_data": {
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) False",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: True or False: when a letter is indicated as present but not in the correct position, that means there can only be one of that letter in the word?\nA) True\n",
+      "completion": "  C) False",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 37.08029866218567,
+      "grade": false
+    },
+    {
+      "name": "Rules-QA-5",
+      "meta_data": {
+        "answer_suggested_length": "10"
+      },
+      "ground_truth": "B) False",
+      "question": "Below is a question about the game Wordle. Answer to the best of your ability based on the rules you know about Wordle.\nQ: True or False: when a letter is indicated as correct, that means that any letter could go in that spot?\nA) True\n",
+      "completion": "  C) Any letter could go in that spot.",
+      "error": null,
+      "model_name": "llama_13b_chat",
+      "eval_time": 37.52559733390808,
+      "grade": false
+    }
+  ]
+}
